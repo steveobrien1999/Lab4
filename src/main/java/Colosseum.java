@@ -71,9 +71,13 @@ public class Colosseum {
      *         <p>
      *         Implement this function.
      */
-    public static Pokemon buildPokemon() {
+    public int hitPoints;
+    public Pokemon buildPokemon() {
         Pokemon tempPokemon = new Pokemon();
         return tempPokemon;
+        if (hitPoints < 1 || hitPoints > MAX_HIT_POINTS) {
+            return null;
+        }
     }
 
     /**
